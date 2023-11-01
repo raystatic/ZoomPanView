@@ -16,19 +16,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        val images = listOf(
-//            R.drawable.cat,
-//            R.drawable.cat1,
-//            R.drawable.cat2,
-//            R.drawable.cat3,
-//            R.drawable.cat4,
-//            R.drawable.cat5,
-//            R.drawable.cat6,
-//            R.drawable.cat7,
-//            R.drawable.cat8,
-//            R.drawable.cat9
-//        )
-
         val videos = listOf(
             R.raw.cat1,
             R.raw.cat2,
