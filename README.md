@@ -42,21 +42,14 @@ For images, try the following
 binding.zoomPanView.setImage(
     image = ContextCompat.getDrawable(this, R.drawable.sample_image),
     shouldShowGradientBackground = true
-  )
+)
 ```
 
 For videos, try the following
 
 ```kotlin
- val uri = Uri.parse("android.resource://" + packageName + "/" + videos.random())
-            binding.zoomPanView.setVideo(uri, shouldShowGradientBackground = true)
-```
-
-```kotlin
-binding.zoomPanView.setImage(
-    image = ContextCompat.getDrawable(this, R.drawable.sample_image),
-    shouldShowGradientBackground = true
-  )
+val uri = Uri.parse("android.resource://" + packageName + "/" + videos.random())
+binding.zoomPanView.setVideo(uri, shouldShowGradientBackground = true)
 ```
 
 ## Sample Code
