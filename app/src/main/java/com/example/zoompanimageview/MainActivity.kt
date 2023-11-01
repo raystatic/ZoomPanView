@@ -1,5 +1,6 @@
 package com.example.zoompanimageview
 
+import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -15,22 +16,30 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val images = listOf(
-            R.drawable.cat,
-            R.drawable.cat1,
-            R.drawable.cat2,
-            R.drawable.cat3,
-            R.drawable.cat4,
-            R.drawable.cat5,
-            R.drawable.cat6,
-            R.drawable.cat7,
-            R.drawable.cat8,
-            R.drawable.cat9
+//        val images = listOf(
+//            R.drawable.cat,
+//            R.drawable.cat1,
+//            R.drawable.cat2,
+//            R.drawable.cat3,
+//            R.drawable.cat4,
+//            R.drawable.cat5,
+//            R.drawable.cat6,
+//            R.drawable.cat7,
+//            R.drawable.cat8,
+//            R.drawable.cat9
+//        )
+
+        val videos = listOf(
+            R.raw.cat1,
+            R.raw.cat2,
+            R.raw.cat3,
+            R.raw.cat4,
         )
 
-        binding.btn.setOnClickListener {
-            binding.zoomPanView.setImage(image = ContextCompat.getDrawable(this, images.random()), true)
-        }
 
+        binding.btn.setOnClickListener {
+            val uri = Uri.parse("android.resource://" + packageName + "/" + videos.random())
+            binding.zoomPanView.setVideo(uri, true)
+        }
     }
 }

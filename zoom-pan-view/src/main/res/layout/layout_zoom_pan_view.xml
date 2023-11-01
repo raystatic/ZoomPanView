@@ -8,6 +8,15 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:minWidth="100dp"
-        android:minHeight="100dp" />
+        android:minHeight="100dp"
+        android:visibility="gone"/>
+
+    <com.raystatic.zoom_pan_view.ZoomPanVideoView
+        android:id="@+id/video"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:minWidth="100dp"
+        android:minHeight="100dp"
+        android:visibility="gone"/>
 
 </FrameLayout>
